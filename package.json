@@ -1,0 +1,16 @@
+{
+  "name": "Home-Page",
+  "description": "My home page that has all my usefull links and stuff on it",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install .; npm install -g coffee-script",
+    "start": "coffee server.coffee"
+  },
+  "author": "Linas Beresna",
+  "dependencies": {
+    "coffee-script": "^1.12.6",
+    "express": "^4.15.3",
+    "request-promise": "^4.2.1"
+  }
+}
