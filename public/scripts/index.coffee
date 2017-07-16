@@ -1,2 +1,4 @@
-$ ->
-	console.log('DOM is ready')
+(($) ->
+  console.log("ready")
+    
+) jQuery

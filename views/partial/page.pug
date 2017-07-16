@@ -1,0 +1,22 @@
+mixin info
+  meta(name="author" content="Linas Berensa")
+  meta(name="description" content="My home page that will store links and other stuff")
+  link(rel="shortcut icon" href="images/vytis.jpg")
+
+mixin scripts
+  script(src="bower_components/jquery/dist/jquery.min.js")
+  script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    +info
+    block meta
+      title Home Page
+    link(rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css")
+  body
+    block body
+    +scripts
+    
