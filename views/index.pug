@@ -1,9 +1,16 @@
 extends partial/page
 
+mixin block(text)
+  a(href="")
+    div.linker
+      =text
+
 append meta
   title Home Page | Index
-  link(rel="stylesheet" href="stylesheets/styles.css")
 
 block body
-  h1 Title Page
+  +block('reddit')
+  +block('email')
+  +block('news')
+
 
