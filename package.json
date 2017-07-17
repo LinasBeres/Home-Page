@@ -1,8 +1,12 @@
 {
-  "name": "Home-Page",
+  "name": "homepage",
   "description": "My home page that has all my usefull links and stuff on it",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LinasBeres/Home-Page"
+  },
   "scripts": {
     "prestart": "npm install .; npm install -g coffee-script",
     "postinstall": "bower update",
