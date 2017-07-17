@@ -3,10 +3,6 @@ mixin info
   meta(name="description" content="My home page that will store links and other stuff")
   link(rel="shortcut icon" href="images/vytis.jpg")
 
-mixin scripts
-  script(src="bower_components/jquery/dist/jquery.min.js")
-  script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
-
 doctype html
 html
   head
@@ -15,11 +11,12 @@ html
     link(rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css")
     link(rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css")
     block meta
-      title Home Page
-      link(rel="stylesheet" href="stylesheets/styles.css")
-    
+    title Home Page
+    link(rel="stylesheet" href="stylesheets/styles.css")
+
 
   body
     block body
-    +scripts
-    
+    block scripts
+      script(src="bower_components/jquery/dist/jquery.min.js")
+      script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")

@@ -1,4 +1,4 @@
-(($) ->
-  console.log("ready")
-    
-) jQuery
+
+
+$ () ->
+  console.log("hello")
