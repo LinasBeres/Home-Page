@@ -29,6 +29,11 @@ body
   background-color:#689d6a;
 }
 
+.bounds
+{
+  background-color:#504945;
+}
+
 a:focus, a:hover
 {
   text-decoration: none; 

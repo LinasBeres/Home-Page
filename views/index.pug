@@ -9,9 +9,11 @@ append meta
   title Home Page | Index
 
 block body
-  +block('Reddit', 'http://www.reddit.com')
-  +block('Email', 'https://mail.google.com')
-  +block('News', 'http://www.bbc.co.uk/news')
+  div.container
+    div.bounds
+      +block('Reddit', 'http://www.reddit.com')
+      +block('Email', 'https://mail.google.com')
+      +block('News', 'http://www.bbc.co.uk/news')
 
 append scripts
   script(src="scripts/index.js")

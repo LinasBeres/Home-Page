@@ -1,2 +1,3 @@
 $ ->
-  $('.linker').draggable()
+  $('.linker').draggable
+    containment: '.bounds'
