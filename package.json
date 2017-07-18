@@ -13,6 +13,7 @@
     "start": "coffee server.coffee"
   },
   "author": "Linas Beresna",
+  "license": "ISC",
   "dependencies": {
     "coffee-script": "^1.12.6",
     "express": "^4.15.3",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "bower": "^1.8.0",
     "grunt": "^1.0.1",
-    "grunt-contrib-coffee": "^1.0.0"
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
   }
 }

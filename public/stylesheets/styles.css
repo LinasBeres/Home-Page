@@ -9,12 +9,27 @@ body
 {
   background-color: #fabd2f;
   color: #282828;
-  width: 150px;
-  height: 100px;
-  margin: 50px 25px 20px 25px;
+  width: 250px;
+  height: 200px;
+  margin: 50px 10px 20px 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #fbf1c7;
   border-radius: 3px; 
+}
+
+.linker:hover
+{
+  background-color:#d79921;
+}
+
+.linker:active
+{
+  background-color:#689d6a;
+}
+
+a:focus, a:hover
+{
+  text-decoration: none; 
 }
