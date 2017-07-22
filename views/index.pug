@@ -1,19 +1,25 @@
 extends partial/page
 
-mixin block(text, url)
-  a(href=url)
-    div.linker
-      =text
+mixin sidePanel
+  .sidePanel
+    a(href='https://www.reddit.com')
+      div Reddit
+    a(href='https://www.gmail.com')
+      div Gmail
+    div#uni University
+    div#news News
+    div#links Links
+
+mixin mainPanel
+  .mainPanel
+    hi
 
 append meta
   title Home Page | Index
 
 block body
   div.container
-    div.bounds
-      +block('Reddit', 'http://www.reddit.com')
-      +block('Email', 'https://mail.google.com')
-      +block('News', 'http://www.bbc.co.uk/news')
-
+    +sidePanel
+    +mainPanel
 append scripts
   script(src="scripts/index.js")
