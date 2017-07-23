@@ -12,7 +12,11 @@ mixin sidePanel
 
 mixin mainPanel
   .mainPanel
-    hi
+    div.links
+      - for (var x = 0; x < 4; x++)
+        div.col-md-3
+          ul
+
 
 append meta
   title Home Page | Index

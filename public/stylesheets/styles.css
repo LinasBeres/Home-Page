@@ -5,6 +5,17 @@ body
   padding: 20px 20px 20px 20px
 }
 
+#header
+{
+  width: calc(100% - 40px);
+  margin: 0px 20px 20px 20px;
+  background-color: #504945;
+  height:65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 a:focus, a:hover, a 
 {
   text-decoration: none;
@@ -49,4 +60,14 @@ a:focus, a:hover, a
   height: 500px;
   float: left;
   margin-left: 10px;
+}
+
+.links
+{
+  background-color: #665c54;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  width: calc(100% - 10px);
+  height: 490px;
+  display: none;
 }
