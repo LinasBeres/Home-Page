@@ -1,5 +1,8 @@
 node_modules/
 package-lock.json
 *.swp
-bower_components
+bower_components/
 public/scripts/*.js
+public/stylesheets/*.css
+public/stylesheets/*.css.map
+.sass-cache/

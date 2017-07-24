@@ -1,0 +1,56 @@
+//+++++++++++++++++++++++++++++++++|
+//++++++++ Main Sass File +++++++++|
+//+++++++++++++++++++++++++++++++++|
+
+//++++ Colors
+//+++++++++++++
+$bg_colour: #282828
+$fg_colour: #244346
+
+//++++ Super Classes
+//++++++++++++++++++++
+#center
+  display: flex
+  align-items: center
+  justify-content: center
+
+//++++ Misc
+//+++++++++++
+html, body
+  height: 100%
+  width: 100%
+
+.centre
+  @extend #center
+  margin: auto
+  width: 100%
+  height: 100%
+
+.horizontal_line
+  width: 100%
+  border-top: 2px solid black
+  margin: 1px 0px 1px 0px
+
+// Say no to the standard links
+a:hover
+  text-decoration: none
+
+//++++ The Uni Stuff
+//++++++++++++++++++++
+.uni 
+  width: 95px
+
+  .title 
+    border: 1px solid rgba(84,110,122,0.31372549019)
+    font-size: 20px
+    width: 100%
+    height: 35px
+    background-color: blue
+    @extend #center
+
+  .list
+    text-align: center
+  
+  a
+    display: block
+    margin: 5px 0px 5px 0px

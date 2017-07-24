@@ -34,30 +34,22 @@ mixin favs
       img(src="")
 
 mixin ucl
-  .ucl
+  .ucl.uni
     div.title UCL
     div.horizontal_line
     div.list
-      ul
-        li 
-          a(href="http://www.ucl.ac.uk/portico") Portico
-        li
-          a(href="https://moodle.ucl.ac.uk/") Moodle
-        li
-          a(href="http://www.ucl.ac.uk/isd/live_login") Email
+      a(href="http://www.ucl.ac.uk/portico") Portico
+      a(href="https://moodle.ucl.ac.uk/") Moodle
+      a(href="http://www.ucl.ac.uk/isd/live_login") Email
 
 mixin waterloo
-  .waterloo
+  .waterloo.uni
     div.title Waterloo
     div.horizontal_line
     div.list
-      ul
-        li
-          a(href="https://quest.pecs.uwaterloo.ca/psp/SS/?cmd=login&languageCd+ENG&utm_source=040-17_InboundStudyAbroad_WelcometoWaterlooUG_2Jun&utm_campaign=16e8597b49-040-17_InboundStudyAbroad_WelcometoWaterlooUG_2Jun&utm_medium=email&utm_term=0_0b32206e70-16e8597b49-101096849&languageCd=ENG&") Quest
-        li 
-          a(href="https://cas.uwaterloo.ca/cas/login?service=https://portal.uwaterloo.ca/Account/Login") Portal
-        li
-          a(href="https://adfs.uwaterloo.ca/adfs/ls/?lc=2057&client-request-id=98678844-1f45-4a8b-8c5b-245b28b57b57&username=lberesna%40edu.uwaterloo.ca&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=estsredirect%3d2%26estsrequest%3drQIIAY2OQWvUQBiGd2Oy1KWHtSdPKmhEkN2dTJIZd6EIrWnJYldlV7e1hzjJzKQpSWZNJlr1D4j2sEfPHnsSwYsnBUEpKHv2J_gDxKNZWaUgSm8fL9_zvk-90j2_I-U477bbY5FJErcE51HAWoFIWiILIzq7sqV649rT8IVz9nlvf_vC9qU3T0YH1Yv_JNsxSWmUhi2Sj_em1eozRYXAxq8VbWN1Y8X9pEw-n_mqnLqRhS4d5WuMsozISKTv1FfDqdr4pi4CrbuwUG8sntbOVX6o1ZdaabD68cv1R6MPawfv-9Pv9-qVQ629mxDfGdzf2rSxeMw3ieXaqCduDcCQrpjrYOtux3loD3cv30TuMu4ak9rSpKYc1ipvT-6fOJ79VUmykMllHXLKOCli-SvWTV7IxMtFkQVMNylAsGlgb8TisoDp0IaoL5wHLJXenSgnA1nQ8s51iGZYQJIxicK0BANgA44NzkseWrOO_mDouamMvdvrXq-I0ZxJGI2KpCRYQqJ4HkqWzSLgYQqhDxAGVvNI4_zrj6Vhdn4vOHvBDklDNl8xwN9qhAeY-ASjoHkM8P9-PoKll8W53zxaCwzTsDrGlZ81&popupui=") Email
+      a(href="https://quest.pecs.uwaterloo.ca/psp/SS/?cmd=login&languageCd+ENG&utm_source=040-17_InboundStudyAbroad_WelcometoWaterlooUG_2Jun&utm_campaign=16e8597b49-040-17_InboundStudyAbroad_WelcometoWaterlooUG_2Jun&utm_medium=email&utm_term=0_0b32206e70-16e8597b49-101096849&languageCd=ENG&") Quest
+      a(href="https://cas.uwaterloo.ca/cas/login?service=https://portal.uwaterloo.ca/Account/Login") Portal
+      a(href="https://adfs.uwaterloo.ca/adfs/ls/?lc=2057&client-request-id=98678844-1f45-4a8b-8c5b-245b28b57b57&username=lberesna%40edu.uwaterloo.ca&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=estsredirect%3d2%26estsrequest%3drQIIAY2OQWvUQBiGd2Oy1KWHtSdPKmhEkN2dTJIZd6EIrWnJYldlV7e1hzjJzKQpSWZNJlr1D4j2sEfPHnsSwYsnBUEpKHv2J_gDxKNZWaUgSm8fL9_zvk-90j2_I-U477bbY5FJErcE51HAWoFIWiILIzq7sqV649rT8IVz9nlvf_vC9qU3T0YH1Yv_JNsxSWmUhi2Sj_em1eozRYXAxq8VbWN1Y8X9pEw-n_mqnLqRhS4d5WuMsozISKTv1FfDqdr4pi4CrbuwUG8sntbOVX6o1ZdaabD68cv1R6MPawfv-9Pv9-qVQ629mxDfGdzf2rSxeMw3ieXaqCduDcCQrpjrYOtux3loD3cv30TuMu4ak9rSpKYc1ipvT-6fOJ79VUmykMllHXLKOCli-SvWTV7IxMtFkQVMNylAsGlgb8TisoDp0IaoL5wHLJXenSgnA1nQ8s51iGZYQJIxicK0BANgA44NzkseWrOO_mDouamMvdvrXq-I0ZxJGI2KpCRYQqJ4HkqWzSLgYQqhDxAGVvNI4_zrj6Vhdn4vOHvBDklDNl8xwN9qhAeY-ASjoHkM8P9-PoKll8W53zxaCwzTsDrGlZ81&popupui=") Email
 
 
 //-----------------------------------------------------------\\
@@ -67,10 +59,12 @@ append meta
   title Home Page | Index
 
 block body
-  +timeBox
-  +favs
-  +ucl
-  +waterloo
+  div.centre
+    div.holder
+      +timeBox
+      +favs
+      +ucl
+      +waterloo
 
 append scripts
   script(src="scripts/index.js")
