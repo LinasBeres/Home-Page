@@ -2,7 +2,11 @@ $ ->
   $('[data-toggle="tooltip"]').tooltip() # Initialise all tooltips
 
   $('#links').click () ->
+    $('.university').hide()
     $('.links').show()
+  $('#uni').click () ->
+    $('.university').show()
+    $('.links').hide()
 
   $.ajax
     url: "links/links.txt"
