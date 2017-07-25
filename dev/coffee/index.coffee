@@ -1,7 +1,6 @@
 $ ->
   word = getTimeWord()
   $('.time h1').append(word)
-
   setInterval(displayTime, 1000)
 
 getTimeWord = ->

@@ -1,0 +1,10 @@
+extends partial/page
+
+block body
+  form(autocomplete="off" spellcheck="false" method="get" action="https://duckduckgo.com/").overlay#search_form
+    div
+      input(type="text" name="q")#search_input
+
+append scripts
+  script(src="scripts/form.js")    
+

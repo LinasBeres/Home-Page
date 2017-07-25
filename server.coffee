@@ -18,6 +18,9 @@ app.use '/bower_components', express.static(path.join(__dirname, '/bower_compone
 app.get '/', (req, res) ->
 	res.render 'index', {title: 'Home', message: 'Hello!'}
 
+app.get '/test', (req, res) ->
+  res.render 'test', {title: 'Test'}
+
 console.log "Starting server on port: #{port}"
 app.listen port
 
