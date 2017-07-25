@@ -5,7 +5,25 @@
 //++++ Colors
 //+++++++++++++
 $bg_colour: #282828
-$fg_colour: #244346
+$brbg_colour: #3c3836
+$dkbg_colour: #1d2021
+$fg_colour: #ebdbb2
+$brfg_colour: #fbf1c7
+$dkfg_colour: #d5c4a1
+$red_colour: #cc241d
+$brred_colour: #fb4934
+$green_colour: #98971a
+$brgreen_colour: #b8bb26
+$yellow_colour: #d79921
+$bryellow_colour: #fabd2f
+$blue_colour: #458588
+$brblue_colour: #83a598
+$purple_colour: #b16286
+$brpurple_colour: #d3869b
+$aqua_colour: #689d6a
+$braqua_colour: #83c07c
+$orange_colour: #d65d0e
+$brorange_colour: #fe8019
 
 //++++ Super Classes
 //++++++++++++++++++++
@@ -19,6 +37,8 @@ $fg_colour: #244346
 html, body
   height: 100%
   width: 100%
+  background-color: $bg_colour
+  color: $fg_colour
 
 .centre
   @extend #center
@@ -28,17 +48,34 @@ html, body
 
 .horizontal_line
   width: 100%
-  border-top: 2px solid black
+  border-top: 4px solid $dkbg_colour
   margin: 1px 0px 1px 0px
 
-// Say no to the standard links
-a:hover
-  text-decoration: none
+.time
+  text-align: center
+  
+  h1
+    margin: 0px
+    font-style: italic
+    
+time
+  font-size: 135px
 
+.inline
+  margin: 30px 0px 10px 0px
+
+// Say no to the standard links
+a
+  color: $fg_colour
+
+a:hover, a:focus
+  text-decoration: none
+  color: $dkfg_colour
 //++++ The Uni Stuff
 //++++++++++++++++++++
 .uni 
   width: 95px
+  float: left
 
   .title 
     border: 1px solid rgba(84,110,122,0.31372549019)
@@ -46,6 +83,7 @@ a:hover
     width: 100%
     height: 35px
     background-color: blue
+    color: $brfg_colour
     @extend #center
 
   .list
@@ -54,3 +92,35 @@ a:hover
   a
     display: block
     margin: 5px 0px 5px 0px
+
+.ucl
+  .title
+    background-color: $purple_colour
+
+.waterloo
+  float: right 
+  .title
+    background-color: $yellow_colour
+
+//++++ Fav box
+//++++++++++++++
+.favs
+  float: left
+  padding: 10px 10px 10px 10px
+  border: 1px solid $brbg_colour
+  // background-color: $dkbg_colour
+  margin: 0px 20px 0px 20px 
+  width: 174px
+  height: 100%
+
+  img
+    -webkit-filter: grayscale(75%)
+    filter: grayscale(75%)
+    width: 32px
+    height: 32px
+    margin: 3px 3px 3px 3px
+
+  img:hover
+    -wevkit-filter: grayscale(100%)
+    filter: grayscale(100%)
+

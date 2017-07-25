@@ -9,7 +9,7 @@
   },
   "scripts": {
     "prestart": "npm install .; npm install -g coffee-script",
-    "postinstall": "bower update; grunt coffee",
+    "postinstall": "bower update; grunt coffee; grunt sass",
     "start": "coffee server.coffee"
   },
   "author": "Linas Beresna",

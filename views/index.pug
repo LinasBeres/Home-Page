@@ -2,7 +2,7 @@ extends partial/page
 
 
 //--------------------------------------------------------\\
-//- ---------------- Blocks of goodness ---------------- -\\
+//- ---------------- Mixins of goodness ---------------- -\\
 //--------------------------------------------------------\\
 mixin timeBox
   .time
@@ -12,26 +12,26 @@ mixin timeBox
 
 mixin favs
   .favs
-    a(href="www.facebook.com")
-      img(src="")
-    a(href="www.youtube.com")
-      img(src="")
-    a(href="www.reddit.com")
-      img(src="")
-    a(href="www.github.com")
-      img(src="")
-    a(href="google.mail.com")
-      img(src="")
-    a(href="www.bbc.co.uk/news")
-      img(src="")
-    a(href="www.bbc.co.uk/iplayer")
-      img(src="")
-    a(href="www.pinterest.com")
-      img(src="")
-    a(href="")
-      img(src="")
-    a(href="")
-      img(src="")
+    a(href="https://www.facebook.com")
+      img(src="images/facebook.png")
+    a(href="https://www.youtube.com")
+      img(src="images/youtube.png")
+    a(href="https://www.reddit.com")
+      img(src="images/reddit.png")
+    a(href="https://www.github.com")
+      img(src="images/github.png")
+    a(href="https://google.mail.com")
+      img(src="images/gmail.png")
+    a(href="https://www.bbc.co.uk/news")
+      img(src="images/bbc.png")
+    a(href="https://www.bbc.co.uk/iplayer")
+      img(src="images/iplayer.png")
+    a(href="https://www.pinterest.com")
+      img(src="images/pinterest.png")
+    //- a(href="")
+      //- img(src="")
+    //- a(href="")
+      //- img(src="")
 
 mixin ucl
   .ucl.uni
@@ -62,9 +62,10 @@ block body
   div.centre
     div.holder
       +timeBox
-      +favs
-      +ucl
-      +waterloo
+      div.inline
+        +ucl
+        +favs
+        +waterloo
 
 append scripts
   script(src="scripts/index.js")
