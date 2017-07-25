@@ -10,13 +10,13 @@ mixin timeBox
       span.time_of_day
     time
 
-mixin favs
-  .favs
-    a(href="https://www.facebook.com")
-      img(src="images/facebook.png")
-    a(href="https://www.youtube.com")
-      img(src="images/youtube.png")
-    a(href="https://www.reddit.com")
+//- mixin favs
+  //- .favs
+    //- a(href="https://www.facebook.com")
+      //- img(src="images/facebook.png")
+    //- a(href="https://www.youtube.com")
+      //- img(src="images/youtube.png")
+    //- a(href="https://www.reddit.com")
       img(src="images/reddit.png")
     a(href="https://www.github.com")
       img(src="images/github.png")
@@ -34,7 +34,7 @@ mixin favs
       //- img(src="")
 
 mixin ucl
-  .ucl.uni
+  .ucl.links
     div.title UCL
     div.horizontal_line
     div.list
@@ -43,7 +43,7 @@ mixin ucl
       a(href="http://www.ucl.ac.uk/isd/live_login") Email
 
 mixin waterloo
-  .waterloo.uni
+  .waterloo.links
     div.title Waterloo
     div.horizontal_line
     div.list
@@ -51,6 +51,49 @@ mixin waterloo
       a(href="https://cas.uwaterloo.ca/cas/login?service=https://portal.uwaterloo.ca/Account/Login") Portal
       a(href="https://adfs.uwaterloo.ca/adfs/ls/?lc=2057&client-request-id=98678844-1f45-4a8b-8c5b-245b28b57b57&username=lberesna%40edu.uwaterloo.ca&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=estsredirect%3d2%26estsrequest%3drQIIAY2OQWvUQBiGd2Oy1KWHtSdPKmhEkN2dTJIZd6EIrWnJYldlV7e1hzjJzKQpSWZNJlr1D4j2sEfPHnsSwYsnBUEpKHv2J_gDxKNZWaUgSm8fL9_zvk-90j2_I-U477bbY5FJErcE51HAWoFIWiILIzq7sqV649rT8IVz9nlvf_vC9qU3T0YH1Yv_JNsxSWmUhi2Sj_em1eozRYXAxq8VbWN1Y8X9pEw-n_mqnLqRhS4d5WuMsozISKTv1FfDqdr4pi4CrbuwUG8sntbOVX6o1ZdaabD68cv1R6MPawfv-9Pv9-qVQ629mxDfGdzf2rSxeMw3ieXaqCduDcCQrpjrYOtux3loD3cv30TuMu4ak9rSpKYc1ipvT-6fOJ79VUmykMllHXLKOCli-SvWTV7IxMtFkQVMNylAsGlgb8TisoDp0IaoL5wHLJXenSgnA1nQ8s51iGZYQJIxicK0BANgA44NzkseWrOO_mDouamMvdvrXq-I0ZxJGI2KpCRYQqJ4HkqWzSLgYQqhDxAGVvNI4_zrj6Vhdn4vOHvBDklDNl8xwN9qhAeY-ASjoHkM8P9-PoKll8W53zxaCwzTsDrGlZ81&popupui=") Email
 
+mixin social
+  .social.links
+    div.title Social
+    div.horizontal_line
+    div.list
+      a(href="https://www.facebook.com") Facebook
+      a(href="https://www.reddit.com") Reddit
+      a(href="https://www.pinterest.com") Pinterest
+
+mixin code
+  .code.links
+    div.title Code
+    div.horizontal_line
+    div.list
+      a(href="https://github.com") Github
+      a(href="https://wiki.archlinux.org") ArchWiki
+      a(href="https://stackoverflow.com/") Stackoverflow
+
+mixin video
+  .video.links
+    div.title Video
+    div.horizontal_line
+    div.list
+      a(href="https://www.youtube.com") YouTube
+      a(href="https://www.bbc.co.uk/iplayer") iPlayer
+      a(href="https://www.twitch.tv") Twitch
+
+mixin google
+  .google.links
+    div.title Google
+    div.horizontal_line
+    div.list
+      a(href="https://mail.google.com") Gmail
+      a(href="https://www.google.com/drive") Drive
+      a(href="https://www.google.co.uk/maps") Maps
+
+mixin news
+  .news.links
+    div.title News
+    div.horizontal_line
+    div.list
+      a(href="https://www.bbc.co.uk/news") BBC
+      a(href="https://www.ft.com/?edition=uk") FT
 
 //-----------------------------------------------------------\\
 //- ----------------- Main Page Extensions ---------------- -\\
@@ -64,8 +107,12 @@ block body
       +timeBox
       div.inline
         +ucl
-        +favs
         +waterloo
+        +social
+        +code
+        +video
+        +google
+        +news
 
 append scripts
   script(src="scripts/index.js")

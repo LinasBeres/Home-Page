@@ -14,8 +14,8 @@ getTimeWord = ->
   hour = new Date().getHours()
 
   if hour >= 6 and hour < 12 then return " Morning!"
-  else if hour > 12 and hour < 17 then return " Afternoon!"
-  else if hour > 17 and hour < 24 then return " Evening!"
+  else if hour >= 12 and hour < 17 then return " Afternoon!"
+  else if hour >= 17 and hour < 24 then return " Evening!"
   else return "...? Wait shouldn't you be asleep?"
 
 displayTime = ->
