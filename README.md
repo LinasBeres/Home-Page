@@ -8,4 +8,4 @@ Add an argument for a port, the default one is 4242.
 Type `npm start` and then go to localhost:{port}
 
 ## Dependancies
-You will need node and npm to run this.
+You will need node and npm to start, but also sass installed on your machine to compile the sass files.

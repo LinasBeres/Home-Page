@@ -26,7 +26,6 @@ displayTime = ->
   if dateTime.getSeconds() < 10 then seconds = '0' + dateTime.getSeconds() else seconds = dateTime.getSeconds()
 
   time = hours + ':' + minutes + ':' + seconds
-
   $('time').html(time)
 
 createLinks = (data) ->
