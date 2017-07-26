@@ -11,6 +11,6 @@ Type `npm start` and then go to localhost:{port}
 You will need node and npm to start, but also sass installed on your machine to compile the sass files.
 
 ## TODO
-* Add search bar
+* Add search bar **done**
 * Weather side control
 * Links viewer
