@@ -2,6 +2,7 @@ $ ->
   word = getTimeWord()
   $('.time h1').append(word)
   setInterval(displayTime, 1000)
+  new FormInput("#search_form", ".holder")
 
 getTimeWord = ->
   hour = new Date().getHours()

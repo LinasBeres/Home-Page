@@ -72,6 +72,11 @@ mixin news
       a(href="https://www.bbc.co.uk/news") BBC
       a(href="https://www.ft.com/?edition=uk") FT
 
+mixin formInput
+  form(autocomplete="off" spellcheck="false" method="get" action="https://duckduckgo.com/").overlay#search_form
+    div
+      input(type="text" name="q")#search_input
+
 //-----------------------------------------------------------\\
 //- ----------------- Main Page Extensions ---------------- -\\
 //-----------------------------------------------------------\\
@@ -80,6 +85,7 @@ append meta
 
 block body
   div.centre
+    +formInput
     div.holder
       +timeBox
       div.inline
@@ -92,4 +98,5 @@ block body
         +news
 
 append scripts
+  script(src="scripts/form.js")
   script(src="scripts/index.js")
