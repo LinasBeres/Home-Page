@@ -2,11 +2,11 @@
 This my custom home page that will host everything that I need when I first launch my browser.
 
 ## Acknowledgments 
-####Influences: 
+#### Influences: 
 * TheGreatDarthTater [startpage](https://github.com/Hungry-Hobo/Homepage)
 * cadejscroggins [startpage](https://github.com/cadejscroggins/tilde)
 
-####Fonts: 
+#### Fonts: 
 * [Tron](http://www.dafont.com/tron.font)
 
 ## How to run
