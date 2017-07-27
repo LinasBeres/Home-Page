@@ -1,6 +1,9 @@
 # Home Page
 This my custom home page that will host everything that I need when I first launch my browser.
 
+![screenshot](http://i.imgur.com/rcAdjMF.png)
+
+
 ## Acknowledgments 
 #### Influences: 
 * TheGreatDarthTater [startpage](https://github.com/Hungry-Hobo/Homepage)
