@@ -78,6 +78,15 @@ a:hover, a:focus
   text-decoration: none
   color: $dkfg_colour
 
+.button_text
+  padding: 0px
+  border: none
+  background-color: transparent
+
+.button_text:focus, .button_text:hover
+  color: $dkfg_colour
+  outline: none
+
 //++++ links
 //++++++++++++++++++++
 .links
@@ -149,3 +158,33 @@ a:hover, a:focus
 
   input:focus
     outline: none
+
+//++++ SideBar
+//++++++++++++++
+.side_bar
+  width: 23%
+  height: 100%
+  background-color: $dkbg_colour
+  position: absolute
+  left: 0px
+  border-right: 2px solid $brbg_colour
+  overflow: scroll
+  display: none
+
+  .close
+    color: $brfg_colour
+    text-shadow: none
+    opacity: 0.7
+    margin-right: 3px
+
+  .close:hover
+    color: $fg_colour
+
+  .close:focus
+    outline: none
+
+  h3
+    margin: 10px 0px 0px 5px
+
+  h3:hover, h3:focus
+    cursor: pointer

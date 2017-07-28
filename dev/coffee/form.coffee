@@ -7,10 +7,11 @@ class FormInput
   _focus: =>
     form = @form
     not_form = @not_form
-    $(document).keypress () ->
-      $(form).css("display", "flex")
-      $(not_form).hide()
-      $("#{form} input").focus()
+    $(document).keydown (e) ->
+      if not e.ctrlKey and not e.altKey and not e.metaKey
+        $(form).css("display", "flex")
+        $(not_form).hide()
+        $("#{form} input").focus()
 
   _exit: =>
     form = @form

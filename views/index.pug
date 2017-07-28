@@ -77,6 +77,17 @@ mixin formInput
     div
       input(type="text" name="q")#search_input
 
+mixin sideBar
+  .side_bar
+    button(type="button").close
+      span(aria-hidden="true") &times;
+    h3 Notes
+    div.notes
+    h3 Links
+    div.bookmarks
+    h3 ToDo
+    div.todo
+
 //-----------------------------------------------------------\\
 //- ----------------- Main Page Extensions ---------------- -\\
 //-----------------------------------------------------------\\
@@ -86,6 +97,7 @@ append meta
 block body
   div.centre
     +formInput
+    +sideBar
     div.holder
       +timeBox
       div.inline
